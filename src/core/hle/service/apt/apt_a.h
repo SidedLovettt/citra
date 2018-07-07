@@ -1,0 +1,18 @@
+// Copyright 2014 Citra Emulator Project
+// Licensed under GPLv2 or any later version
+// Refer to the license.txt file included.
+
+#pragma once
+
+#include "core/hle/service/apt/apt.h"
+
+namespace Service {
+namespace APT {
+
+class APT_A final : public Module::Interface {
+public:
+    explicit APT_A(std::shared_ptr<Module> apt);
+};
+
+} // namespace APT
+} // namespace Service
